@@ -2,4 +2,7 @@ title: Phoenix CLI
 description: Cayman is a clean, responsive theme for GitHub Pages.
 show_downloads: true
 google_analytics:
-theme: 
+theme:
+
+url: "http://phoenix-cli.github.io"
+baseurl: ""
