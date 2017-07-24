@@ -1,8 +1,12 @@
 title: Phoenix CLI
-description: A ruby command-line interface for Phoenix Framework that makes development easy in Phoenix
+description: A ruby command-line interface for Phoenix Framework <br> that makes development easy in Phoenix
 show_downloads: true
 google_analytics:
 theme:
+author:
+  name: "Dayvson Lima"
+  slug: "dayvsonlima"
+  github: "https://github.com/dayvsonlima"
 
 url: "http://phoenix-cli.github.io"
 baseurl: ""

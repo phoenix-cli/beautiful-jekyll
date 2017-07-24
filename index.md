@@ -2,122 +2,52 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# [](#why)Why?
 
-[Link to another page](another-page).
+Is a command line interface written in ruby
+that makes development easy in Phoenix Framework
 
-There should be whitespace between paragraphs.
+# [](#install)Install
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+You can get it on gem installer.
 
-# [](#header-1)Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## [](#header-2)Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### [](#header-3)Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```bash
+gem install phoenix-cli
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+# [](#usage)Usage
+
+Just type the commands in your terminal in the same directory as your Phoenix project
+
+## Command List
+
+| Command | Description | Phoenix equivalent |
+| --- | --- | --- |
+| install | Install Phoenix Framework | -
+| new APP_PATH | Create new Phoenix application | mix phoenix.new
+| deps | Install the Phoenix dependencies | mix deps.get
+| server | Start the web server | mix phoenix.server
+| console | Start Phoenix console | iex -S mix
+| routes | Show Phoenix routes | mix phoenix.routes
+| version | Get current CLI version | -
+
+Run `phoenix` for more options
+
+
+## Generators List
+You can use generators with the following syntax
+
+```bash
+phoenix generate GENERATOR_NAME
 ```
 
-#### [](#header-4)Header 4
+| Command | Description | Phoenix equivalent |
+| --- | --- | --- |
+| scaffold | Generate Full set of model, view, database migration for that model, controller | mix phoenix.gen.html
+| api | Generate Full model, view in json, database migration for that model, controller  | mix phoenix.gen.json
+| json | Alias for api command  | mix phoenix.gen.json
+| model | Generates an Ecto model in your Phoenix application. | mix phoenix.gen.model
+| channel | Generates a Phoenix channel  | mix phoenix.gen.channel
+| presence | Generates a Presence tracker for your application | mix phoenix.gen.presence
+| secret | Generates a secret and print it to the terminal | mix phoenix.gen.secret
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### [](#header-5)Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### [](#header-6)Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
