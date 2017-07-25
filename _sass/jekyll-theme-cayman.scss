@@ -92,11 +92,12 @@ a {
 
 .likebar {
   width: 100%;
-  background: rgba(0,0,0, .2);
+  background: rgba(0,0,0, .4);
   height: 50px;
   padding-top: 10px;
   margin-top: 20px;
-  top: 0;
+  bottom: 0;
+  position: absolute;
 
   .title {
     display: none;
@@ -120,6 +121,10 @@ a {
       position: absolute;
       left: 30px;
       margin-top: -4px;
+
+      @include small {
+        display: none;
+      }
     }
   }
 }
@@ -133,6 +138,8 @@ a {
   text-align: center;
   background-color: $header-bg-color;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  padding-bottom: 80px;
+  position: relative;
 
   @include large {
     padding-top: 1rem;
